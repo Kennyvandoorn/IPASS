@@ -12,7 +12,7 @@ I also created a little tic-tac-due(toe) game that uses buttons as input, and af
 a circle will be drawn at the corresponding coordinate in the grid.
 This way I can demonstrate my working library for the OLED.
 
-# Included library('s)
+# Included librarie(s)
 The library I created is based on [hwlib and bmptk](https://github.com/wovo/hwlib).
 
 # Used hardware
