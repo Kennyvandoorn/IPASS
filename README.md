@@ -1,13 +1,13 @@
 <h1>IPASS - SSD1331</h1>
 
 <h2>Introduction</h2>
-This is the repository for my propaedeutic year end project, called IPASS.
-
-The goal of this project is to write a library for a hardware component of my choice,
+This repository is created for the final project of this propeadeutic year. The project is called IPASS.
+<br>
+<br>The goal of this project is to write a library for a hardware component of my choice,
 and write this library using the OOP ways that I have learned this period.
 I had to use my self-made library to communicate with the hardware.
-
-I have also created a tic-tac-toe game with physical buttons that can be used by two players.
+<br>
+<br>I have also created a tic-tac-toe game with physical buttons that can be used by two players.
 Buttons 1 to 9 are each linked to a specific coordinate in the grid.
 After pressing one of the buttons on the keypad, a circle will be drawn at the corresponding coordinate in the grid.
 Using this game, I can demonstrate my library for the OLED.
