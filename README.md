@@ -33,12 +33,8 @@ I also used two of the following [keypads](https://bit.ly/3h0HOFr).
 git clone https://github.com/kennyvandoorn/IPASS
 ```
 # Instructions
-Make sure you have downloaded and included hwlib into your project. 
-```
-https://github.com/wovo/hwlib
-```
-
-Build using the included makefile, or run the run.bat file from your terminal.
+1. Make sure you have downloaded and included [hwlib](https://github.com/wovo/hwlib) into your project. 
+2. Build using the included makefile, or run the run.bat file from your terminal.
 
 # Extra notes
 The included main.cpp shows you the use on how to create pins, and create objects.
