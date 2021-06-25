@@ -39,3 +39,9 @@ https://github.com/wovo/hwlib
 ```
 
 Build using the included makefile, or use the included /run.bat file.
+
+# Extra notes
+The included main.cpp shows you the use on how to create pins, and create objects.
+You can use these predefined variables to test the OLED and key matrix.
+
+
