@@ -14,12 +14,12 @@ https://github.com/wovo/hwlib
 
 I chose the SSD1331 driver that is combined with an RGB Oled screen.
 ```
-"https://hu-hbo-ict.gitlab.io/turing-lab/ti-lab-shop/RGB%20)LED%2096%20x%2064.html"
+https://hu-hbo-ict.gitlab.io/turing-lab/ti-lab-shop/RGB%20)LED%2096%20x%2064.html
 ```
 
 I also used two of the following keypads:
 ```
-"https://hu-hbo-ict.gitlab.io/turing-lab/ti-lab-shop/keypad%20foil%204x4.html"
+https://hu-hbo-ict.gitlab.io/turing-lab/ti-lab-shop/keypad%20foil%204x4.html
 ```
 
 # Created by
