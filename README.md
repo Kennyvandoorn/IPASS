@@ -3,17 +3,17 @@
 # Introduction
 This is the repository for my propaedeutic year end project, called IPASS.
 
-The goal of this project was to write a library for a hardware component of your choice,
+The goal of this project is to write a library for a hardware component of your choice,
 and write this library using the OOP ways that we learned this period.
-You also needed to use the library you created to "talk" to the hardware.
-I chose to create a library that was based on hwlib, and I haven't used any other library.
+You had to use your self made library to communicate with the hardware.
 
-I also created a little tic-tac-due(toe) game that uses buttons as input, and after a button press,
-a circle will be drawn at the corresponding coordinate in the grid.
-This way I can demonstrate my working library for the OLED.
+I have also created a little tic-tac-due(toe) game that uses buttons for players.
+The buttons 1-9 are linked to a specific coordinate in the grid.
+After each button press a circle will be drawn at the corresponding coordinate in the grid.
+This way I can demonstrate my library for the OLED.
 
-# Included librarie(s)
-The library I created is based on [hwlib and bmptk](https://github.com/wovo/hwlib).
+# Included libraries
+This library makes use of [hwlib and bmptk](https://github.com/wovo/hwlib).
 
 # Used hardware
 This library is intended to be used with the [Arduino Due](https://www.arduino.cc/en/Main/ArduinoBoardDue).
@@ -33,12 +33,12 @@ I also used two of the following [keypads](https://bit.ly/3h0HOFr).
 git clone https://github.com/kennyvandoorn/IPASS
 ```
 # Instructions
-Make sure you downloaded and included hwlib into your project. 
+Make sure you have downloaded and included hwlib into your project. 
 ```
 https://github.com/wovo/hwlib
 ```
 
-Build using the included makefile, or use the included /run.bat file.
+Build using the included makefile, or run the run.bat file from your terminal.
 
 # Extra notes
 The included main.cpp shows you the use on how to create pins, and create objects.
