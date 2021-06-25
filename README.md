@@ -2,7 +2,7 @@
 This is the repository for my propaedeutic year end project, called IPASS.
 
 The goal of this project was to write a library for a hardware component of your choice,
-and write this library using the OOP ways that we learned last semester.
+and write this library using the OOP ways that we learned this period.
 You also needed to use the library you created to "talk" to the hardware.
 I created a little tic-tac-due(toe) game that uses buttons as input, and after a button press,
 a circle will be drawn at the corresponding coordinate in the grid.
