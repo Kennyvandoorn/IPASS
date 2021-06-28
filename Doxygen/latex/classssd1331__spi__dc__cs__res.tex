@@ -1,0 +1,67 @@
+\hypertarget{classssd1331__spi__dc__cs__res}{}\doxysection{ssd1331\+\_\+spi\+\_\+dc\+\_\+cs\+\_\+res Class Reference}
+\label{classssd1331__spi__dc__cs__res}\index{ssd1331\_spi\_dc\_cs\_res@{ssd1331\_spi\_dc\_cs\_res}}
+
+
+RGB OLED Display.  
+
+
+
+
+{\ttfamily \#include $<$ssd1331.\+hpp$>$}
+
+Inheritance diagram for ssd1331\+\_\+spi\+\_\+dc\+\_\+cs\+\_\+res\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classssd1331__spi__dc__cs__res}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssd1331__spi__dc__cs__res_ad79ed3aad6f9cd33ee349eb5d889ece9}\label{classssd1331__spi__dc__cs__res_ad79ed3aad6f9cd33ee349eb5d889ece9}} 
+void \mbox{\hyperlink{classssd1331__spi__dc__cs__res_ad79ed3aad6f9cd33ee349eb5d889ece9}{command}} (\mbox{\hyperlink{ssd1331_8hpp_a2088c1c14386e353e5fb79dcade9af75}{ssd1331}} c)
+\begin{DoxyCompactList}\small\item\em Command only. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssd1331__spi__dc__cs__res_a279bb6fe253fa7694cad52e44569ef7e}\label{classssd1331__spi__dc__cs__res_a279bb6fe253fa7694cad52e44569ef7e}} 
+void \mbox{\hyperlink{classssd1331__spi__dc__cs__res_a279bb6fe253fa7694cad52e44569ef7e}{command}} (\mbox{\hyperlink{ssd1331_8hpp_a2088c1c14386e353e5fb79dcade9af75}{ssd1331}} c, uint8\+\_\+t d)
+\begin{DoxyCompactList}\small\item\em Command with one data byte. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssd1331__spi__dc__cs__res_a4fa6aed6e13214cf58f91585b57d0e91}\label{classssd1331__spi__dc__cs__res_a4fa6aed6e13214cf58f91585b57d0e91}} 
+void \mbox{\hyperlink{classssd1331__spi__dc__cs__res_a4fa6aed6e13214cf58f91585b57d0e91}{command}} (\mbox{\hyperlink{ssd1331_8hpp_a2088c1c14386e353e5fb79dcade9af75}{ssd1331}} c, uint8\+\_\+t d0, uint8\+\_\+t d1)
+\begin{DoxyCompactList}\small\item\em Command with two data bytes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classssd1331__spi__dc__cs__res_a1529fa208ca832f39b65710188b5ca54}{ssd1331\+\_\+spi\+\_\+dc\+\_\+cs\+\_\+res}} (hwlib\+::spi\+\_\+bus \&bus, hwlib\+::pin\+\_\+out \&dc, hwlib\+::pin\+\_\+out \&cs, hwlib\+::pin\+\_\+out \&res)
+\item 
+\mbox{\Hypertarget{classssd1331__spi__dc__cs__res_a127b07c2719c21215b89c225136e467b}\label{classssd1331__spi__dc__cs__res_a127b07c2719c21215b89c225136e467b}} 
+void \mbox{\hyperlink{classssd1331__spi__dc__cs__res_a127b07c2719c21215b89c225136e467b}{flush}} ()
+\begin{DoxyCompactList}\small\item\em Flush the GDDRAM, and write to the OLED display. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssd1331__spi__dc__cs__res_aafc604113e2d228551c66762347ac4b5}\label{classssd1331__spi__dc__cs__res_aafc604113e2d228551c66762347ac4b5}} 
+void \mbox{\hyperlink{classssd1331__spi__dc__cs__res_aafc604113e2d228551c66762347ac4b5}{write\+\_\+implementation}} (hwlib\+::xy pos, hwlib\+::color col)
+\begin{DoxyCompactList}\small\item\em Fill the buffer with pixels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssd1331__spi__dc__cs__res_aa8e19a7438db35f3b77bc00d0bbb4805}\label{classssd1331__spi__dc__cs__res_aa8e19a7438db35f3b77bc00d0bbb4805}} 
+void \mbox{\hyperlink{classssd1331__spi__dc__cs__res_aa8e19a7438db35f3b77bc00d0bbb4805}{clear\+\_\+implementation}} (hwlib\+::color col)
+\begin{DoxyCompactList}\small\item\em Clear the screen by writing a color to the whole screen size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+RGB OLED Display. 
+
+This class implements an interface to an 96 x 64 pixel OLED display. The interface is SPI. The driver chip is an SSD1331.
+
+The interface is buffered\+: All writes are buffered in memory until \mbox{\hyperlink{classssd1331__spi__dc__cs__res_a127b07c2719c21215b89c225136e467b}{flush()}} is called.
+
+VDD can only be up to 3.\+3V.
+
+See the datasheet here\+: \href{https://cdn-shop.adafruit.com/datasheets/SSD1331_1.2.pdf}{\texttt{ https\+://cdn-\/shop.\+adafruit.\+com/datasheets/\+SSD1331\+\_\+1.\+2.\+pdf}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classssd1331__spi__dc__cs__res_a1529fa208ca832f39b65710188b5ca54}\label{classssd1331__spi__dc__cs__res_a1529fa208ca832f39b65710188b5ca54}} 
+\index{ssd1331\_spi\_dc\_cs\_res@{ssd1331\_spi\_dc\_cs\_res}!ssd1331\_spi\_dc\_cs\_res@{ssd1331\_spi\_dc\_cs\_res}}
+\index{ssd1331\_spi\_dc\_cs\_res@{ssd1331\_spi\_dc\_cs\_res}!ssd1331\_spi\_dc\_cs\_res@{ssd1331\_spi\_dc\_cs\_res}}
+\doxysubsubsection{\texorpdfstring{ssd1331\_spi\_dc\_cs\_res()}{ssd1331\_spi\_dc\_cs\_res()}}
+{\footnotesize\ttfamily ssd1331\+\_\+spi\+\_\+dc\+\_\+cs\+\_\+res\+::ssd1331\+\_\+spi\+\_\+dc\+\_\+cs\+\_\+res (\begin{DoxyParamCaption}\item[{hwlib\+::spi\+\_\+bus \&}]{bus,  }\item[{hwlib\+::pin\+\_\+out \&}]{dc,  }\item[{hwlib\+::pin\+\_\+out \&}]{cs,  }\item[{hwlib\+::pin\+\_\+out \&}]{res }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create an SSD1331 OLED instance.
+
+This constructor creates an SSD1331 OLED instance from its interface pins. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ssd1331_8hpp}{ssd1331.\+hpp}}\end{DoxyCompactItemize}
