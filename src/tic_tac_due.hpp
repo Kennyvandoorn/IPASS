@@ -13,7 +13,6 @@
 #include "ssd1331.hpp"
 #include <array>
 
-
 // this file contains Doxygen lines
 /// @file
 
@@ -22,8 +21,6 @@
 /// \details
 /// This class keeps track of everything regarding positions in the grid,
 /// and is also responsible for the translation of button chars to grid coordinates.
-///
-
 class position
 {
 private:
@@ -75,8 +72,7 @@ public:
 /// tic_tac_due
 /// \details
 /// This class is responsible for initializing, and starting the game of tic-tac-due.
-/// It starts, and keeps track of player turns.
-///
+/// It starts the game, and keeps track of player turns.
 class tic_tac_due
 {
 private:
